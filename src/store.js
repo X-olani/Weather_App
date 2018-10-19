@@ -60,6 +60,7 @@ export const getProvince = args => {
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case "PROVINCE":
+      let o;
       console.log(action.results);
       let results = action.results;
       let tempComment;
