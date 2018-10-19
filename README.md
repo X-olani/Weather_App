@@ -1,2 +1,0 @@
-# music_app
-WeatherApp
