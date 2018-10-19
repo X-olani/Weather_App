@@ -1,27 +1,79 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+html,
+body {
+  widows: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+#root {
+  height: 100%;
+}
+td {
+  border: 2px solid #afafaf54;
+}
+nav {
+}
+.MainContent {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  background-image: url("https://images.pexels.com/photos/6754/road-nature-lines-country.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+.Provinces {
   color: white;
+  width: 99%;
+  height: 20px;
+  margin-bottom: 10px;
+  border: 1px solid white;
+  padding: 0.25rem;
+  background-color: #0000004f;
+}
+table {
+  text-align: left;
+}
+.DisplayWeather {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+}
+.WeatherContent {
+  text-align: center;
+  width: 56%;
+  background-color: #35342db8;
+  color: white;
+  padding: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+@media only screen and (max-width: 600px) {
+  nav {
+    margin: 9px;
+    display: flex;
+    flex-grow: 1;
+  }
+  .DisplayWeather {
+    display: flex;
+    margin-top: 9px;
+  }
+  .MainContent {
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+  .WeatherContent {
+    flex-grow: 1;
+  }
 }
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
